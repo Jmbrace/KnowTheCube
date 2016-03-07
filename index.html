@@ -12,9 +12,14 @@
 <link rel="stylesheet" type="text/css" href="examples/basic/styles/base.css">
 <body style = "background-color:white">
 <iframe style = "width:100%; height:500px" src = "./cube.html"></iframe>
-
+<script>
+//Script tags, I know this is bad, however, hackathons call for sloppy code, so I think we will live
+var solve = function (){
+	document.getElementsByTagName( "iframe" )[ 0 ].contentWindow.ERNO.Solver();
+}
+</script>
 <div style = "text-align:center">
-	<button class = "btn btn-primary" onclick = "document.getElementsByTagName( "iframe" )[ 0 ].contentWindow.ERNO.Solver()">Solve</button>
+	<button class = "btn btn-primary" onclick = "solve">Solve</button>
 </div>
 <div>
 </div>
