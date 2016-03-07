@@ -220,6 +220,9 @@ ERNO.Solver = function(){
 		type: 'GET',
 		success: function(result){
 			alert(result.solution);
+		},
+		error: function(result){
+			alert("Some error occured");
 		}
 	})
 	// this.logic = function( cube ){ return false };;

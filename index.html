@@ -14,12 +14,28 @@
 <iframe style = "width:100%; height:500px" src = "./cube.html"></iframe>
 <script>
 //Script tags, I know this is bad, however, hackathons call for sloppy code, so I think we will live
-var solve = function (){
-	document.getElementsByTagName( "iframe" )[ 0 ].contentWindow.ERNO.Solver();
-}
+	var disabled = false;
+	var test = function(disabled){
+		disabled = false;
+		console.log("Hola");
+	}
+	var solve = function (){
+
+		if (!disabled)
+		{
+			disabled = true;
+			console.log("not disabled");
+			test(disabled);
+			//document.getElementsByTagName( "iframe" )[ 0 ].contentWindow.ERNO.Solver(disabled);
+			setMessages();
+		}
+	}
 </script>
+
 <div style = "text-align:center">
 	<button class = "btn btn-primary" onclick = "solve()">Solve</button>
+	<span>asd</span>
+	<span>asdd</span>
 </div>
 <div>
 </div>
