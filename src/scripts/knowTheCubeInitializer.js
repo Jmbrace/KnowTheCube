@@ -3,7 +3,7 @@
 
 		setTimeout(function(){
 			var msg1 = document.createElement('div');
-			msg1.textContent = "Currently a python application is constructing a search tree in order to find the optimal solution to the cube.";
+			msg1.textContent = "Currently a python application is constructing a search tree in order to find the optimal sequence of moves to solve the cube.";
 			msg1.style = "color:black; opacity:0"
 			document.getElementsByTagName('div')[0].appendChild(msg1);
 			$(msg1).animate({opacity:1})
@@ -11,7 +11,7 @@
 
 		setTimeout(function(){
 			var msg2 = document.createElement('div');
-			msg2.textContent = "This is done by using a two fundamental techniques in Artificial Intelligence, problem formulation and search. ";
+			msg2.textContent = "This is done by using two fundamental techniques in Artificial Intelligence, i.e. problem formulation and search. ";
 			msg2.style = "color:black; opacity:0"
 			document.getElementsByTagName('div')[0].appendChild(msg2);
 			$(msg2).animate({opacity:1})
@@ -35,7 +35,7 @@
 
 		setTimeout(function(){
 			var msg5 = document.createElement('div');
-			msg5.textContent = "The root of our search tree is the initial configuration, and we will search the tree until the solved Rubick’s cube is found, then the path taken from the root of the tree to the solved cube corresponds to the sequence of moves that will solve the Rubik’s cube.";
+			msg5.textContent = "The root of our search tree is the initial configuration, and we will search the tree until the solved Rubik’s cube is found, then the path taken from the root of the tree to the solved cube corresponds to the sequence of moves that will solve the Rubik’s cube.";
 			msg5.style = "color:black; opacity:0"
 			document.getElementsByTagName('div')[0].appendChild(msg5);
 			$(msg5).animate({opacity:1})
@@ -59,7 +59,7 @@
 
 		setTimeout(function(){
 			var msg8 = document.createElement('div');
-			msg8.textContent = "Tomas Rokicki, Herbet Kociemba, Morley Davidson, and John Dethridge proved that the maximum number of steps to solve any Rubick’s cube is at most 20.";
+			msg8.textContent = "Tomas Rokicki, Herbet Kociemba, Morley Davidson, and John Dethridge proved that the maximum number of steps to solve any Rubik’s cube is at most 20.";
 			msg8.style = "color:black; opacity:0"
 			document.getElementsByTagName('div')[0].appendChild(msg8);
 			$(msg8).animate({opacity:1})
@@ -91,7 +91,7 @@
 
 		setTimeout(function(){
 			var msg12 = document.createElement('div');
-			msg12.textContent = "Well since there are 6 faces of the cube, and each face can be rotated clockwise or counterclockwise, this gives 12 possible moves that can be made given any Rubick’s cube. ";
+			msg12.textContent = "Well since there are 6 faces of the cube, and each face can be rotated clockwise or counterclockwise, this gives 12 possible moves that can be made given any Rubik’s cube. ";
 			msg12.style = "color:black; opacity:0"
 			document.getElementsByTagName('div')[0].appendChild(msg12);
 			$(msg12).animate({opacity:1})
@@ -99,7 +99,7 @@
 
 		setTimeout(function(){
 			var msg13 = document.createElement('div');
-			msg13.textContent = "This is a fairly complicated computation, even with the sophisticated Astar iIerative Deepening algorithm in use, the computation time may take a while!";
+			msg13.textContent = "This is a fairly complicated computation, even with the sophisticated Astar Iterative Deepening algorithm in use, the computation time may take a while!";
 			msg13.style = "color:black; opacity:0"
 			document.getElementsByTagName('div')[0].appendChild(msg13);
 			$(msg13).animate({opacity:1})

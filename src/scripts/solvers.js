@@ -215,6 +215,7 @@ ERNO.Solver = function(){
 			initialConfiguration = ERNO.buildListForApi();
 		}
 	}
+	console.log("Executing GET call to solution.");
 	$.ajax({
 		url: 'http://iknowthecube.herokuapp.com/solve/'+ initialConfiguration + '/' + goalState,
 		type: 'GET',
