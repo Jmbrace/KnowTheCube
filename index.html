@@ -15,19 +15,18 @@
 <script>
 //Script tags, I know this is bad, however, hackathons call for sloppy code, so I think we will live
 	var disabled = false;
-	var test = function(disabled){
-		disabled = false;
-		console.log("Hola");
-	}
 	var solve = function (){
 
 		if (!disabled)
 		{
 			disabled = true;
-			console.log("not disabled");
-			test(disabled);
-			//document.getElementsByTagName( "iframe" )[ 0 ].contentWindow.ERNO.Solver(disabled);
+			console.log("Solving now.");
+			document.getElementsByTagName( "iframe" )[ 0 ].contentWindow.ERNO.Solver();
 			setMessages();
+		}
+		else 
+		{
+			console.log("The button is not disabled.");
 		}
 	}
 </script>

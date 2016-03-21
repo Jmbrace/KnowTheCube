@@ -220,6 +220,7 @@ ERNO.Solver = function(){
 		url: 'http://iknowthecube.herokuapp.com/solve/'+ initialConfiguration + '/' + goalState,
 		type: 'GET',
 		success: function(result){
+			result.solution = result.solution.substring(1,result.solution.length());
 			alert(result.solution);
 		},
 		error: function(result){
