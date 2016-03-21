@@ -216,7 +216,7 @@ ERNO.Solver = function(){
 		}
 	}
 	$.ajax({
-		url: 'http://127.0.0.1:5000/solve/'+ initialConfiguration + '/' + goalState,
+		url: 'http://iknowthecube.herokuapp.com/solve/'+ initialConfiguration + '/' + goalState,
 		type: 'GET',
 		success: function(result){
 			alert(result.solution);
