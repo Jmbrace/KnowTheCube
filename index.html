@@ -14,14 +14,15 @@
 <iframe style = "width:100%; height:500px" src = "./cube.html"></iframe>
 <script>
 //Script tags, I know this is bad, however, hackathons call for sloppy code, so I think we will live
-	var disabled = false;
+	var handleButton = {};
+	handleButton.disabled = false;
 	var solve = function (){
 
-		if (!disabled)
+		if (!handleButton.disabled)
 		{
-			disabled = true;
+			handleButton.disabled = true;
 			console.log("Solving now.");
-			document.getElementsByTagName( "iframe" )[ 0 ].contentWindow.ERNO.Solver();
+			document.getElementsByTagName( "iframe" )[ 0 ].contentWindow.ERNO.Solver(handleButton);
 			setMessages();
 		}
 		else 

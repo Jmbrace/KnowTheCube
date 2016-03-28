@@ -44,7 +44,7 @@ ERNO.buildListForApi = function(){
 	return list;
 }
 
-ERNO.Solver = function(){
+ERNO.Solver = function(handleButton){
 
 
 	var leftCenter = window.cube.cubelets[4].id;
@@ -221,10 +221,12 @@ ERNO.Solver = function(){
 		type: 'GET',
 		success: function(result){
 			result.solution = result.solution.substring(2,result.solution.length);
+			handleButton.disabled = false;
 			alert(result.solution);
 		},
 		error: function(result){
 			alert("Some error occured");
+			handleButton.disabled = false;
 		}
 	})
 	// this.logic = function( cube ){ return false };;
